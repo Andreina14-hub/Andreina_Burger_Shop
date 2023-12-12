@@ -16,9 +16,13 @@ footer {
     font-size: 2rem;
   }
 
-  p,
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
   strong {
-    margin: 1rem;
+    margin: 1em;
   }
 
   aside {
@@ -35,6 +39,7 @@ footer {
       margin: 0.5rem;
       font-size: 2rem;
       color: white;
+
       &:hover {
         color: $red;
       }

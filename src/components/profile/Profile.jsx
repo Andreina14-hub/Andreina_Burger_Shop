@@ -22,7 +22,7 @@ const Profile = () => {
         <motion.h5 {...options} transition={{ delay: 0.3 }}>
           Nelson
         </motion.h5>
-      
+
         <motion.div
           initial={{
             x: "-100vw",
@@ -33,7 +33,8 @@ const Profile = () => {
             opacity: 1,
           }}
         >
-          <Link to="/myorders">Orders</Link>
+          <MdDashboard></MdDashboard>
+          <Link to="/myorders">Mis Pedidos</Link>
         </motion.div>
 
         <motion.button
@@ -49,7 +50,7 @@ const Profile = () => {
             delay: 0.3,
           }}
         >
-          Logout
+          Cerrar sesión
         </motion.button>
       </main>
     </section>
