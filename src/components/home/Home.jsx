@@ -31,7 +31,7 @@ const Home = () => {
                     </motion.p>
                 </div>
                 <motion.a
-                    href="#menu"
+                    href="/menu"
                     initial={{
                         y: "-100%",
                         opacity: 0,

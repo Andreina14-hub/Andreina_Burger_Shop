@@ -16,7 +16,7 @@ const About = () => {
                             El lugar con las hamburguesas más sabrosas del planeta.</p>
                         <p>Explora nuestra oferta de comida y hambuguesas.</p>
                         <p>Haz click a continuacion para ver el Menú</p>
-                        <Link to="/">
+                        <Link to="#menu">
                             {<RiFindReplaceLine />}
                         </Link>
 
