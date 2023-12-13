@@ -33,7 +33,6 @@ const Profile = () => {
             opacity: 1,
           }}
         >
-          <MdDashboard></MdDashboard>
           <Link to="/myorders">Mis Pedidos</Link>
         </motion.div>
 

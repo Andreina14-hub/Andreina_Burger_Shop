@@ -5,10 +5,12 @@
   overflow-x: hidden;
 
   div {
+    color: $red;
+    text-shadow: solid 1rem 5rem 3rem rgb(255, 255, 255);
     padding-left: 8rem;
     padding-top: 15rem;
     > h1 {
-      font-size: 4rem;
+      font-size: 3rem;
       text-transform: uppercase;
     }
 

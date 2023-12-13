@@ -27,7 +27,7 @@ const Home = () => {
                             delay: 0.2,
                         }}
                     >
-                        Give yourself a tasty burger.
+                        Regálate una sabrosa hamburguesa.
                     </motion.p>
                 </div>
                 <motion.a
@@ -44,7 +44,7 @@ const Home = () => {
                         delay: 0.4,
                     }}
                 >
-                    Explore Menu
+                    Explorar el menú
                 </motion.a>
             </section>
             <Menu />

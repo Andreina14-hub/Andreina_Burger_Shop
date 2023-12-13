@@ -12,11 +12,7 @@ nav {
   > div {
     display: flex;
     align-items: center;
-
-    > svg {
-      color: $red;
-      font-size: 3rem;
-    }
+    color: $red;
 
     > a {
       margin: 0 2rem;
