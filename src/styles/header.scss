@@ -19,6 +19,7 @@ nav {
       &:hover {
         color: $lightdark;
       }
+
       > svg {
         color: $red;
         transition: inherit;
@@ -34,17 +35,17 @@ nav {
   width: 2em;
   height: 2em;
 }
-.dropdown-menu {
-  display: none;
-}
+
 @media screen and (max-width: 600px) {
-  .dropdown-menu {
-    display: block;
-  }
-  nav {
-    padding: 1rem;
-    > div > a {
-      margin: 0 0.5rem;
+  .navhide {
+    display: none; /* Hide inner links on mobile */
+    nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
+}
+.open {
+  display: flex;
 }

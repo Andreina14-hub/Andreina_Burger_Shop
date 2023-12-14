@@ -1,89 +1,36 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+// import React from "react";
+// import { useState } from "react";
+// import { Link } from "react-router-dom";
+// import { IoFastFoodOutline } from "react-icons/io5";
+// import { FiShoppingCart, FiLogIn } from "react-icons/fi";
+// import { FaUser } from "react-icons/fa";
+// import { motion } from "framer-motion";
 
-const DropdownMenu = () => {
-  const [navLinks, setNavLinks] = useState([]);
+// const DropdownMenu = ({ isAuthenticated = false }) => {
+//   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    const navs = [
-      { name: "Login", path: "/login" },
-      { name: "Orders", path: "/myorders" },
-      { name: "Logout", path: "/login" }
-
-    ];
-    setNavLinks(navs);
-  }, []);
-
-  const isMobile = window.innerWidth < 768;
-  return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div className="container">
-          <a className="navbar-brand" href="react-icons/io5">
-          </a>
-          <div className="btn-group">
-            {isMobile && (
-              <>
-                <button
-                  type="button"
-                  class="btn btn-primary dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  data-bs-display="static"
-                  aria-expanded="false"
-                >
-                  Menu
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  {navLinks.map((d, i) => (
-                    <li key={i}>
-                      <Link to={d.path}>
-                        <button class="dropdown-item" type="button">
-                          {d.name}
-                        </button>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
-          </div>
-        </div>
-      </nav>
-    </div>
-  );
-};
 //   return (
-//     <div>
-//       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-//         <div className="container">
-//           <a className="navbar-brand" href="react-icons/io5">
+//     <nav>
+//       <motion.div
+//         initial={{ x: "-100%" }}
+//         whileInView={{ x: 0 }}
+//         onClick={() => setIsOpen(!isOpen)}
+//       >
+//         <Link to="/">
+//           <IoFastFoodOutline className="custom-style" />
+//         </Link>
+//       </motion.div>
 
-//           </a>
-//           <div class="btn-group">
-//             <button
-//               type="button"
-//               class="btn btn-primary dropdown-toggle"
-//               data-bs-toggle="dropdown"
-//               data-bs-display="static"
-//               aria-expanded="false"
-//             >
-//               Menu
-//             </button>
-//             <ul class="dropdown-menu dropdown-menu-end">
-//               {navLinks.map((d, i) => (
-//                 <li key={i}>
-//                   <Link to={d.path}>
-//                     <button class="dropdown-item" type="button">
-//                       {d.name}
-//                     </button>
-//                   </Link>
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-//         </div>
-//       </nav>
-//     </div>
+//       <div className={`navhide ${isOpen ? "open" : ""}`}>
+//         <Link to="/About">¿Quiénes Somos?</Link>
+//         <Link to="/contact">Contacto</Link>
+//         <Link to="/me">{< FaUser />}</Link>
+//         <Link to="/cart">{<FiShoppingCart />}</Link>
+//         <Link to="/login">{<FiLogIn />}</Link>
+//       </div>
+//     </nav>
 //   );
+// };
 
-export default DropdownMenu;
+
+// export default DropdownMenu;
