@@ -1,19 +1,26 @@
 @import "colors";
 .cart {
   background-color: $pink;
-  width: 100%;
-  height: 100vh;
-
+  background-repeat: no-repeat;
+  // width: 100vw;
+  // height: 100vh;
   > main {
-    height: 100%;
+    width: 75vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: white;
-    max-width: 900px;
     margin: auto;
     padding: 2rem;
 
     > article {
+      display: flex;
+      margin: auto;
       padding: 2rem;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
       > div {
+        width: 55em;
         display: flex;
         justify-content: space-between;
         margin: 1rem 0;
@@ -25,8 +32,6 @@
         padding: 0.5rem 1rem;
         border-radius: 5px;
         text-align: center;
-        margin-top: 2rem;
-        float: right;
       }
     }
   }
@@ -36,18 +41,29 @@
   background-color: rgb(246, 246, 246);
   margin: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 1rem;
   border-radius: 5px;
-
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
   > div {
     display: flex;
     align-items: center;
-
     > h4 {
       font-weight: 200;
       letter-spacing: 2px;
+    }
+    img {
+      width: 10em;
+      height: 10em;
+    }
+    img[src="/static/media/burger2.3a02b94cd44d825ebb94.png"] {
+      width: 9em;
+      height: 9em;
+    }
+    img[src="/static/media/burger3.11eccfcb1a45834ac9d7.png"] {
+      width: 12em;
+      height: 7em;
     }
 
     > input {
@@ -56,7 +72,7 @@
       height: 2rem;
       padding: 0.5rem;
       border: none;
-      margin: 0.25rem;
+      margin: auto;
       outline: none;
       border-radius: 5px;
       color: $red;
@@ -80,9 +96,20 @@
 }
 
 @media screen and (max-width: 600px) {
-  .cart > main > article > a {
-    float: none;
-    display: block;
-    width: 100%;
+  .cart > main > article > div {
+    width: 16rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cartItem > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    > div > button {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }

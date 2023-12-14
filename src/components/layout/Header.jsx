@@ -11,15 +11,20 @@ const Header = ({ isAuthenticated = false }) => {
     return (
         <nav>
             <motion.div initial={{ x: "-100%" }} whileInView={{ x: 0 }}>
-                <Link to="/">{<IoFastFoodOutline />} </Link>
+                <Link to="/">
+                    <IoFastFoodOutline
+                        className="custom-style"
+                    />
+                </Link>
             </motion.div>
             <div>
-                <DropdownMenu />
+                <DropdownMenu className="dropdown-menu" />
                 <Link to="/About">¿Quiénes Somos?</Link>
                 <Link to="/contact">Contacto</Link>
                 <Link to="/me">{< FaUser />}</Link>
                 <Link to="/cart">{<FiShoppingCart />}</Link>
                 <Link to="/login">{<FiLogIn />}</Link>
+
             </div>
         </nav >
     );
