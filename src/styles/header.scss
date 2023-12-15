@@ -39,13 +39,27 @@ nav {
 @media screen and (max-width: 600px) {
   .navhide {
     display: none; /* Hide inner links on mobile */
+
     nav {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
     }
   }
 }
 .open {
+  background-color: white;
+  justify-content: space-between;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.1rem;
+  margin: auto;
+  &:hover {
+    background-color: $pink;
+  }
+  > a {
+    text-align: center;
+    padding: 0.5em;
+  }
 }

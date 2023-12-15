@@ -5,6 +5,8 @@
   overflow-x: hidden;
 
   div {
+    color: $pink;
+    text-shadow: 0px 0px 10px $reddark;
     padding-left: 8rem;
     padding-top: 15rem;
     > h1 {
