@@ -13,6 +13,7 @@ nav {
     color: $red;
 
     > a {
+      border-style: none;
       margin: 0 2rem;
       color: $dark;
       transition: color 0.3s;
