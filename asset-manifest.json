@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Burger_Shop/static/css/main.3121db2c.css",
-    "main.js": "/Burger_Shop/static/js/main.320bfbf7.js",
-    "static/media/burger3.png": "/Burger_Shop/static/media/burger3.11eccfcb1a45834ac9d7.png",
-    "static/media/burger2.png": "/Burger_Shop/static/media/burger2.3a02b94cd44d825ebb94.png",
-    "static/media/bg.jpg": "/Burger_Shop/static/media/bg.8bcdc477de5711ccac1c.jpg",
-    "static/media/bg.png": "/Burger_Shop/static/media/bg.e25df216162c9b2fc988.png",
-    "static/media/fa-solid-900.ttf": "/Burger_Shop/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
-    "static/media/burger1.png": "/Burger_Shop/static/media/burger1.6cbf3dc63aff1ced8e98.png",
-    "static/media/fa-brands-400.ttf": "/Burger_Shop/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
-    "static/media/fa-solid-900.woff2": "/Burger_Shop/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
-    "static/media/fa-brands-400.woff2": "/Burger_Shop/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
-    "static/media/fa-regular-400.ttf": "/Burger_Shop/static/media/fa-regular-400.d87474231f4192884802.ttf",
-    "static/media/fa-regular-400.woff2": "/Burger_Shop/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
-    "static/media/skj.jpg": "/Burger_Shop/static/media/skj.2a1b9678d61abc084071.jpg",
-    "static/media/fa-v4compatibility.ttf": "/Burger_Shop/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
-    "static/media/fa-v4compatibility.woff2": "/Burger_Shop/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
-    "index.html": "/Burger_Shop/index.html",
-    "main.3121db2c.css.map": "/Burger_Shop/static/css/main.3121db2c.css.map",
-    "main.320bfbf7.js.map": "/Burger_Shop/static/js/main.320bfbf7.js.map"
+    "main.css": "/static/css/main.f5daf7dd.css",
+    "main.js": "/static/js/main.0869a380.js",
+    "static/media/burger3.png": "/static/media/burger3.11eccfcb1a45834ac9d7.png",
+    "static/media/burger2.png": "/static/media/burger2.3a02b94cd44d825ebb94.png",
+    "static/media/bg.jpg": "/static/media/bg.8bcdc477de5711ccac1c.jpg",
+    "static/media/bg.png": "/static/media/bg.e25df216162c9b2fc988.png",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/burger1.png": "/static/media/burger1.6cbf3dc63aff1ced8e98.png",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/skj.jpg": "/static/media/skj.2a1b9678d61abc084071.jpg",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "index.html": "/index.html",
+    "main.f5daf7dd.css.map": "/static/css/main.f5daf7dd.css.map",
+    "main.0869a380.js.map": "/static/js/main.0869a380.js.map"
   },
   "entrypoints": [
-    "static/css/main.3121db2c.css",
-    "static/js/main.320bfbf7.js"
+    "static/css/main.f5daf7dd.css",
+    "static/js/main.0869a380.js"
   ]
 }
