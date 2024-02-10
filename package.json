@@ -1,8 +1,8 @@
 {
-  "homepage": "https://andreina14-hub.github.io/buger_shop/"  ,
+  "homepage": "https://Andreina14-hub.github.io/buger_shop"  ,
   "name": "buger_shop",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
     "@reduxjs/toolkit": "^1.8.5",
