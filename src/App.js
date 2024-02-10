@@ -32,8 +32,8 @@ function App() {
     <Router>
       {/* <Header isAuthenticated={true} /> */}
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="/home" element={<Home />} />
+        {/* <Route index element={<Home />} /> */}
+        <Route path="/burger_shop" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
