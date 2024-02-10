@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import me from "../../assets/skj.jpg";
+import IniLayout from "../layout/IniLayout";
 const Founder = () => {
   const options = {
     initial: {
@@ -14,6 +15,7 @@ const Founder = () => {
   };
 
   return (
+
     <section className="founder">
       <motion.div {...options}>
         <img src={me} alt="Founder" height={200} width={200} />

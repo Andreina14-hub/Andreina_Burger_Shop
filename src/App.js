@@ -11,6 +11,8 @@ import Profile from "./components/profile/Profile";
 import MyOrders from "./components/myOrders/MyOrders";
 import OrderDetails from "./components/myOrders/OrderDetails";
 import About from "./components/about/About";
+import NotFound from "./components/notFound404/NotFound";
+import './styles/notFound.scss';
 import "./styles/app.scss";
 import "./styles/header.scss";
 import "./styles/home.scss";
@@ -28,9 +30,10 @@ import "./styles/about.scss";
 function App() {
   return (
     <Router>
-      <Header isAuthenticated={true} />
+      {/* <Header isAuthenticated={true} /> */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route index element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
@@ -40,8 +43,10 @@ function App() {
         <Route path="/me" element={<Profile />} />
         <Route path="/myorders" element={<MyOrders />} />
         <Route path="/order/:id" element={<OrderDetails />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

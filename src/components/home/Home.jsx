@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Menu from "./Menu";
 import Founder from "./Founder";
+import IniLayout from "../layout/IniLayout"
 
 
 
@@ -17,7 +18,7 @@ const Home = () => {
         },
     };
     return (
-        <>
+        <IniLayout>
             <section className="home">
                 <div>
                     <motion.h1 {...options}>Hamburguesería</motion.h1>
@@ -49,7 +50,7 @@ const Home = () => {
             </section>
             <Menu />
             <Founder />
-        </>
+        </IniLayout>
     );
 };
 export default Home
