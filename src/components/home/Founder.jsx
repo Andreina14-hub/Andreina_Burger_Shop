@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import me from "../../assets/skj.jpg";
-import IniLayout from "../layout/IniLayout";
 const Founder = () => {
   const options = {
     initial: {

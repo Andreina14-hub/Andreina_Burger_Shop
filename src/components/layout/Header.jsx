@@ -16,7 +16,7 @@ const Header = ({ isAuthenticated = false }) => {
                 whileInView={{ x: 0 }}
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <Link to="/">
+                <Link to="/burger_shop">
                     <IoFastFoodOutline className="custom-style" />
                 </Link>
             </motion.div>

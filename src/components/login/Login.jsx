@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import {
     MDBContainer,
     MDBTabs,
@@ -12,6 +13,7 @@ import {
     MDBCheckbox
 }
     from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 function Login() {
 
@@ -51,8 +53,13 @@ function Login() {
                             style={{ width: "40%" }}
                         >
                             <MDBBtn tag="a" color="none" className="m-1" style={{ color: "#1266f1" }}>
-                                <MDBIcon fab icon="google" size="sm" />
-                            </MDBBtn><MDBBtn tag="a" color="none" className="m-1" style={{ color: "#1266f1" }}>
+
+                                <Link to="/burger_shop">
+                                    <MDBIcon fab icon="google" size="sm" />
+                                </Link>
+                            </MDBBtn>
+
+                            <MDBBtn tag="a" color="none" className="m-1" style={{ color: "#1266f1" }}>
                                 <MDBIcon fab icon="facebook-f" size="sm" />
                             </MDBBtn>
                             <MDBBtn tag="a" color="none" className="m-1" style={{ color: "#1266f1" }}>
@@ -73,7 +80,9 @@ function Login() {
                         />
                         <a href="!#">¿Olvidaste tu contraseña?</a>
                     </div>
-                    <MDBBtn className="mb-4 w-100">Iniciar sesión</MDBBtn>
+                    <Link to="/burger_shop">
+                        <MDBBtn className="mb-4 w-100">Iniciar sesión</MDBBtn>
+                    </Link>
                     <p className="text-center">
                         ¿No estás registrado? <a href="#!">Regístrate</a>
                     </p>

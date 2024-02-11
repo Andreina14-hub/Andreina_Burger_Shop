@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import burger1 from "../../assets/burger1.png";
 import burger2 from "../../assets/burger2.png";
 import burger3 from "../../assets/burger3.png";
+import IniLayout from "../layout/IniLayout";
 import { TITLE_HAMBURGESA3, TITLE_HAMBURGESA2, TITLE_HAMBURGESA1 } from "../../lang/es";
 
 const BurguerItems = [
@@ -38,38 +39,40 @@ const Cart = () => {
     }
   };
   return (
-    <section className="cart">
-      <main>
-        {data.map((item, i) =>
-          <CartItem
-            title={item.title}
-            img={item.img}
-            value={item.value}
-            increment={() => increment(i)}
-            decrement={() => decrement(i)}
-          />
-        )}
-        <article>
-          <div>
-            <h4>Sub Total</h4>
-            <p>€{2000}</p>
-          </div>
-          <div>
-            <h4>Tax</h4>
-            <p>€{2000 * 0.18}</p>
-          </div>
-          <div>
-            <h4>Gastos de envío</h4>
-            <p>€{200}</p>
-          </div>{" "}
-          <div>
-            <h4>Total</h4>
-            <p>€{2000 + 2000 * 0.18 + 200}</p>
-          </div>
-          <Link to="/shipping">Pedido</Link>
-        </article>
-      </main>
-    </section>
+    <IniLayout showFooter={false}>
+      <section className="cart">
+        <main>
+          {data.map((item, i) =>
+            <CartItem
+              title={item.title}
+              img={item.img}
+              value={item.value}
+              increment={() => increment(i)}
+              decrement={() => decrement(i)}
+            />
+          )}
+          <article>
+            <div>
+              <h4>Sub Total</h4>
+              <p>€{2000}</p>
+            </div>
+            <div>
+              <h4>Tax</h4>
+              <p>€{2000 * 0.18}</p>
+            </div>
+            <div>
+              <h4>Gastos de envío</h4>
+              <p>€{200}</p>
+            </div>{" "}
+            <div>
+              <h4>Total</h4>
+              <p>€{2000 + 2000 * 0.18 + 200}</p>
+            </div>
+            <Link to="/shipping">Pedido</Link>
+          </article>
+        </main>
+      </section>
+    </IniLayout>
   );
 };
 

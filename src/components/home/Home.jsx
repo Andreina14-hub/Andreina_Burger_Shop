@@ -48,7 +48,7 @@ const Home = () => {
                     Explorar el menú
                 </motion.a>
             </section>
-            <Menu />
+            <Menu disable />
             <Founder />
         </IniLayout>
     );
