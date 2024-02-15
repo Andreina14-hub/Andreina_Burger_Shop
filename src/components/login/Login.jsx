@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import {
     MDBContainer,
     MDBTabs,
@@ -28,7 +27,7 @@ function Login() {
     };
 
     return (
-        <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
+        <MDBContainer className="p-3 my-5 d-flex flex-column w-50 ">
 
             <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
                 <MDBTabsItem>
@@ -52,17 +51,17 @@ function Login() {
                             className="d-flex justify-content-between mx-auto"
                             style={{ width: "40%" }}
                         >
-                            <MDBBtn tag="a" color="none" className="m-1" style={{ color: "#1266f1" }}>
+                            <MDBBtn tag="a" color="none" className="m-1" >
 
                                 <Link to="/burger_shop">
                                     <MDBIcon fab icon="google" size="sm" />
                                 </Link>
                             </MDBBtn>
 
-                            <MDBBtn tag="a" color="none" className="m-1" style={{ color: "#1266f1" }}>
+                            <MDBBtn tag="a" color="none" className="m-1" >
                                 <MDBIcon fab icon="facebook-f" size="sm" />
                             </MDBBtn>
-                            <MDBBtn tag="a" color="none" className="m-1" style={{ color: "#1266f1" }}>
+                            <MDBBtn tag="a" color="none" className="m-1" >
                                 <MDBIcon fab icon="twitter" size="sm" />
                             </MDBBtn>
                         </ div>

@@ -48,7 +48,9 @@ const Home = () => {
                     Explorar el menú
                 </motion.a>
             </section>
-            <Menu disable />
+            <Menu showHeader={false}
+                showFooter={false}
+            />
             <Founder />
         </IniLayout>
     );

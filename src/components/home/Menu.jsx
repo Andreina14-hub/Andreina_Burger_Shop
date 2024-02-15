@@ -5,10 +5,13 @@ import burger2 from "../../assets/burger2.png"
 import burger3 from "../../assets/burger3.png"
 import IniLayout from "../layout/IniLayout";
 import { TITLE_HAMBURGESA1, TITLE_HAMBURGESA3, TITLE_HAMBURGESA2 } from "../../lang/es"
-const Menu = () => {
+//  parametro para  mostrar o ocultar la cabecera y pie de pagina
+const Menu = ({ showHeader, showFooter }) => {
+
     const addToCartHandler = (itemNum) => { };
     return (
-        <IniLayout>
+        //  se pasa el valor true a las propiedades que indican si se muestra la cabecera o no
+        <IniLayout showHeader={showHeader} showFooter={showFooter}>
             <section className="menu" id="menu">
                 <h1>MENÚ</h1>
                 <div>
