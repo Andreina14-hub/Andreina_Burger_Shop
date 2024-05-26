@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Menu from "./Menu";
+import { Link } from "react-router-dom";
 import Founder from "./Founder";
 import IniLayout from "../layout/IniLayout"
 
@@ -31,22 +32,22 @@ const Home = () => {
                         Regálate una sabrosa hamburguesa.
                     </motion.p>
                 </div>
-                <motion.a
-                    href="/menu"
-                    initial={{
-                        y: "-100%",
-                        opacity: 0,
-                    }}
-                    whileInView={{
-                        y: 0,
-                        opacity: 1,
-                    }}
-                    transition={{
-                        delay: 0.4,
-                    }}
-                >
-                    Explorar el menú
-                </motion.a>
+                <Link to="/menu">
+                    <motion.a
+                        initial={{
+                            y: "-100%",
+                            opacity: 0,
+                        }}
+                        whileInView={{
+                            y: 0,
+                            opacity: 1,
+                        }}
+                        transition={{
+                            delay: 0.4,
+                        }}
+                    >
+                        Explorar el menú
+                    </motion.a></Link>
             </section>
             <Menu showHeader={false}
                 showFooter={false}
